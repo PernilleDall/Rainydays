@@ -20,7 +20,7 @@ body {
   color: #fff;
 }
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   right: 0;
@@ -130,8 +130,7 @@ header {
   width: 100%;
   justify-content: center;
   align-content: center;
-  padding-top: 50px;
-  margin: 30px;
+  padding-top: 20px;
 }
 .logo div {
   height: 130px;
@@ -141,33 +140,43 @@ header {
   background-size: cover;
 }
 
-.aboutcontainer {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.ski .camping {
-  padding: 30px;
-  gap: 30px;
+
+.aboutparagraf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.aboutparagraf1 p {
-  color: #0a3641;
+.aboutparagraf h3 {
+  color: #303030;
+  line-height: 10px;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+.aboutparagraf p {
+  color: #303030;
   font-weight: 500;
   font-size: 12px;
   line-height: 10px;
   letter-spacing: 0.15em;
+  margin: 30px;
+  width: 800px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .ski img {
   margin: 30px;
   width: 350px;
   height: 500px;
 }
-.aboutparagraf1 {
-  margin: 30px;
-  width: 350px;
-  text-align: center;
-}
+
 .camping {
   flex-direction: column;
 }

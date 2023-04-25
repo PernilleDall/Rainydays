@@ -20,7 +20,7 @@ body {
   color: #fff;
 }
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   right: 0;
@@ -130,8 +130,7 @@ header {
   width: 100%;
   justify-content: center;
   align-content: center;
-  padding-top: 50px;
-  margin: 30px;
+  padding-top: 20px;
 }
 .logo div {
   height: 130px;
@@ -140,46 +139,38 @@ header {
   background-position: center;
   background-size: cover;
 }
-.menusection {
-  width: 100%;
+.container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding: 5px;
-  background-color: transparent;
-  margin-bottom: 30px;
-}
-.menu {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  height: 20px;
-  background-color: white;
 }
-.menubutton {
-  width: 180px;
-  font-size: 0.8rem;
-  padding: 6px 8px 6px 8px;
-  background-color: #f1f1f1;
+.container h1 {
   color: #303030;
-  border-radius: 1px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-bottom: 30px;
-  margin: 5px;
+  font-weight: 500;
 }
+hr {
+  position: relative;
+  width: 700px;
+  height: 0px;
 
+  border: 1px solid #0a3641;
+}
 .jacketlist {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 50px;
+  margin: 150px;
   color: #000000;
   font-family: "Gothic A1", sans-serif;
 }
 .jacketlist img {
   height: 240px;
+}
+.jacketlist h3 {
+  text-decoration: none;
 }
 .jacket {
   height: 482px;

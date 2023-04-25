@@ -20,7 +20,7 @@ body {
   color: #fff;
 }
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   right: 0;
@@ -130,8 +130,7 @@ header {
   width: 100%;
   justify-content: center;
   align-content: center;
-  padding-top: 50px;
-  margin: 30px;
+  padding-top: 20px;
 }
 .logo div {
   height: 130px;
@@ -233,6 +232,51 @@ header {
   background-position: center;
   order: 2;
   margin: 50px;
+}
+.news-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  flex-direction: column;
+}
+.news-container h1 {
+  color: #0a3641;
+  font-weight: 500;
+}
+hr {
+  position: relative;
+  width: 100%;
+  height: 0px;
+
+  border: 1px solid #0a3641;
+}
+.news-jacket-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.news-jacket {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px;
+}
+.news-jacket img {
+  height: 300px;
+  width: 250;
+  background-position: center;
+  background-size: cover;
+}
+.news-jacket p {
+  color: #303030;
+}
+.news-jacket h3 {
+  color: #303030;
+}
+.p2 {
+  font-weight: 600;
 }
 .footercontainer {
   max-width: 1170px;

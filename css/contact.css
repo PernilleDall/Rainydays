@@ -20,7 +20,7 @@ body {
   color: #fff;
 }
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   right: 0;
@@ -130,8 +130,7 @@ header {
   width: 100%;
   justify-content: center;
   align-content: center;
-  padding-top: 50px;
-  margin: 30px;
+  padding-top: 20px;
 }
 .logo div {
   height: 130px;
@@ -139,30 +138,45 @@ header {
   background-image: url(/images/rainydayslogo.png);
   background-position: center;
   background-size: cover;
+  margin-bottom: 50px;
 }
-.contactsection {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container h1 {
+  color: #303030;
 }
 .contactcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 500px;
-  padding-left: 300px;
-  width: 500px;
-  height: 600px;
-  margin: 50px;
+  min-height: 100vh;
 }
+.contactcontainer h1 {
+  color: #303030;
+}
+.contact-box h3 {
+  color: #303030;
+  margin-left: 170px;
+  margin-top: 30px;
+}
+
 .contact-box {
   width: 500px;
   background-color: #fff;
   border: 1px solid #0a3641;
+  transform: translate(-50%, -50%);
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 150px;
 }
+
 form {
   margin: 35px;
 }
@@ -205,6 +219,17 @@ form {
 }
 .knapp :hover {
   cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #303030;
+  width: 300px;
+  margin-top: -300px;
+  margin-bottom: 100px;
 }
 .footercontainer {
   max-width: 1170px;
